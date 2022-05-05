@@ -1,0 +1,5 @@
+- change all variable names to favourable, in both fe and be
+- change logo 
+- Donate rinkeby, get appreciation nft.
+- add new tech bubbles
+- animate gm like chat
