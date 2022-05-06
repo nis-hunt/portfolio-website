@@ -1,6 +1,18 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  ::-moz-selection {
+    /* Code for Firefox */
+    // color: red;
+    background: rgba(255, 255, 0, 0.467);
+    color: rgb(8, 123, 239);
+  }
+
+  ::selection {
+    // color: red;
+    background: rgba(255, 255, 0, 0.467);
+    color: rgb(8, 123, 239);
+  }
 }
 
 .app__whitebg {
