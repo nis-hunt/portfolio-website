@@ -68,33 +68,31 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filteredWork.map((work, index) => (
-          <div className="app__flex app__work-card">
-            <div className="app__work-item app_flex" key={index}>
-              <a href={work.projectLink} target="blank" rel="noreferrer">
-                <div className="app__work-img app__flex">
-                  <motion.div
-                    whileHover={{ scale: [1, 0.9] }}
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{
-                      duration: 0.25,
-                    }}
-                    className=" app__flex app__work-github"
-                  >
-                    <a href={work.codeLink} target="blank" rel="noreferrer">
-                      <AiFillGithub />
-                    </a>
-                  </motion.div>
-                  <img src={urlFor(work.imgUrl)} alt={work.name} />
+          <div className="app__work-item app_flex" key={index}>
+            <a href={work.projectLink} target="blank" rel="noreferrer">
+              <div className="app__work-img app__flex">
+                <motion.div
+                  whileHover={{ scale: [1, 0.9] }}
+                  whileInView={{ scale: [0, 1] }}
+                  transition={{
+                    duration: 0.25,
+                  }}
+                  className=" app__flex app__work-github"
+                >
+                  <a href={work.codeLink} target="blank" rel="noreferrer">
+                    <AiFillGithub />
+                  </a>
+                </motion.div>
+                <img src={urlFor(work.imgUrl)} alt={work.name} />
+              </div>
+              <div className="app__work-content app__flex">
+                <h4 className="bold-text">{work.title}</h4>
+                <p className="p-text">{work.description}</p>
+                <div className="app__work-tag app--flex">
+                  <h5 className="p-text">{work.tags[0]}</h5>
                 </div>
-                <div className="app__work-content app__flex">
-                  <h4 className="bold-text">{work.title}</h4>
-                  <p className="p-text">{work.description}</p>
-                  <div className="app__work-tag app--flex">
-                    <h5 className="p-text">{work.tags[0]}</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         ))}
       </motion.div>
