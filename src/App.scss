@@ -132,19 +132,18 @@
 
 .app__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  padding: 1rem;
+  padding: 4rem 1rem;
 
   div {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    // background-color: var(--white-color);
     background-color: transparent;
-    margin: 0.25rem 0;
+    margin: 1rem 0;
     // border: 1px solid var(--lightGray-color);
 
     display: flex;
@@ -156,16 +155,15 @@
     svg {
       width: 40px;
       height: 40px;
-      color: var(--white-color);
+      color: var(--secondary-color);
     }
 
     &:hover {
-      background-color: var(--secondary-color);
       border-color: var(--secondary-color);
-      box-shadow: 0 0 50px rgba(255, 255, 255, 0.496);
 
       svg {
         color: var(--white-color);
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.792));
       }
     }
 
@@ -192,8 +190,8 @@
   padding: 1rem;
 
   .app__navigation-dot {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #cbcbcb;
     margin: 0.5rem;

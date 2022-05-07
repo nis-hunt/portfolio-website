@@ -6,11 +6,11 @@
 
 .app__testimonial-item {
   width: 60%;
-  min-height: 320px;
-  max-height: 500px;
+  min-height: 300px;
+  max-height: 400px;
   background-color: var(--white-color);
   display: flex;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 
@@ -58,8 +58,8 @@
   align-items: flex-start;
 
   p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 1.25rem;
     font-family: var(--font-base);
     text-align: left;
     overflow: scroll;

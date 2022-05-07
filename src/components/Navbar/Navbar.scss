@@ -9,21 +9,21 @@
   z-index: 2;
 }
 
-.app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+// .app__navbar-logo {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
 
-  img {
-    width: 80%;
-    height: 80%;
+//   img {
+//     width: 80%;
+//     height: 80%;
 
-    @media screen and (min-width: 2000px) {
-      width: 110%;
-      height: 110%;
-    }
-  }
-}
+//     @media screen and (min-width: 2000px) {
+//       width: 110%;
+//       height: 110%;
+//     }
+//   }
+// }
 
 .app__navbar-links {
   flex: 1;
