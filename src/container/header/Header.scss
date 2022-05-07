@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  // background: url("../../assets/bgIMG.png");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -66,8 +66,6 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
   .tag-cmp {
@@ -115,7 +113,7 @@
       height: 60%;
     }
   }
-  // @dev --input
+  // @dev --input skill bubbles
   div:nth-child(1) {
     width: 100px;
     height: 100px;

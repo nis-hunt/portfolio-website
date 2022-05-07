@@ -23,7 +23,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
@@ -87,10 +87,10 @@
       padding: 0.95rem;
       border: none;
       border-radius: 7px;
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
 
       font-family: var(--font-base);
-      color: var(--secondary-color);
+      color: var(--primary-color);
       outline: none;
     }
 
@@ -109,8 +109,8 @@
     border: none;
     background-color: var(--secondary-color);
 
-    font-weight: 500;
-    color: var(--white-color);
+    font-weight: bold;
+    color: var(--black-color);
     outline: none;
     margin: 2rem 0 0 0;
     font-family: var(--font-base);
@@ -119,7 +119,8 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #2430af;
+      background-color: var(--primary-color);
+      color: var(--white-color);
     }
   }
 

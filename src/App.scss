@@ -10,15 +10,28 @@
 
   ::selection {
     // color: red;
-    background: rgba(255, 255, 0, 0.467);
+    background: rgba(255, 255, 0, 0.206);
     color: rgb(8, 123, 239);
   }
 }
 
-.app__whitebg {
-  background-color: var(--white-color);
+.app__blur {
+  // 1. Make the background color transparent
+  background: rgba(157, 157, 157, 0.211);
+  // 2. Apply blur background effect to the background 👇️:
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
+.app__whitebg {
+  background: radial-gradient(
+      111% 111% at 74.29% -11%,
+      #a90000 0%,
+      #027000 100%
+    ),
+    linear-gradient(127.43deg, #b7d500 0%, #2200aa 100%);
+  background-blend-mode: difference, normal;
+}
 .app__primarybg {
   background-color: var(--primary-color);
 }
@@ -59,27 +72,35 @@
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--white-color);
+  }
+}
+
+.app__shadow {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.471);
+  &:hover {
+    box-shadow: 0 0 100px -25px rgba(255, 255, 255, 0.496);
   }
 }
 
 .head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
-  color: var(--black-color);
+  color: var(--white-color);
   text-transform: capitalize;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.636);
 
   span {
     color: var(--secondary-color);
   }
 
   @media screen and (min-width: 2000px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   @media screen and (max-width: 450px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -96,8 +117,8 @@
 
 .bold-text {
   font-size: 1rem;
-  font-weight: 800;
-  color: var(--black-color);
+  font-weight: bold;
+  color: var(--white-color);
   text-align: center;
 
   @media screen and (min-width: 2000px) {
@@ -118,12 +139,13 @@
   padding: 1rem;
 
   div {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    // background-color: var(--white-color);
+    background-color: transparent;
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
+    // border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
@@ -132,14 +154,15 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
-      color: var(--gray-color);
+      width: 40px;
+      height: 40px;
+      color: var(--white-color);
     }
 
     &:hover {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.496);
 
       svg {
         color: var(--white-color);
@@ -169,8 +192,8 @@
   padding: 1rem;
 
   .app__navigation-dot {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #cbcbcb;
     margin: 0.5rem;

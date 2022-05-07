@@ -68,7 +68,7 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filteredWork.map((work, index) => (
-          <div className="app__work-item app_flex" key={index}>
+          <div className="app__work-item app__shadow app_flex" key={index}>
             <a href={work.projectLink} target="blank" rel="noreferrer">
               <div className="app__work-img app__flex">
                 <motion.div

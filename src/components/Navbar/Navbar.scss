@@ -3,15 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.25rem 1rem;
 
-  // 1. Make the background color of the navbar transparent
-  background: rgba(225, 225, 225, 0.5);
-  // 2. Apply blur background effect to the background 👇️:
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-
-  border: 1px solid rgba(225, 225, 225, 0.18);
   position: fixed;
   z-index: 2;
 }
@@ -52,11 +45,12 @@
     }
 
     a {
-      color: var(--gray-color);
+      color: var(--white-color);
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 500;
       font-size: medium;
+      font-weight: 800;
       transition: all 0.3s ease-in-out;
 
       &:hover {
@@ -88,12 +82,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--black-color);
 
   svg {
     width: 70%;
     height: 70%;
-    color: var(--white-color);
+    color: var(--secondary-color);
   }
 
   div {

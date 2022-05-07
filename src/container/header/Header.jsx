@@ -29,7 +29,7 @@ const Header = () => {
         className="app__header-info"
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
+          <div className="badge-cmp app__shadow app__flex">
             <span>🌅</span>
             <div style={{ marginLeft: 20 }}>
               <p
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="tag-cmp app__flex">
+          <div className="tag-cmp app__shadow app__flex">
             {myTitle.map((title, index) => (
               <p className="p-text">{myTitle[index]}</p>
             ))}
