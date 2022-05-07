@@ -32,7 +32,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex">
+          <div className="app__testimonial-item app__flex ">
             <img src={urlFor(currentTest.imgurl)} alt="testimonial" />
             <div className="app__testimonial-content">
               <p className="p-text">{currentTest.feedback} </p>
@@ -43,9 +43,9 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="app__testimonial-btns app__flex">
+          <div className="app__testimonial-btns app__flex ">
             <div
-              className="app__flex"
+              className="app__flex app__shadow"
               onClick={() =>
                 handleClick(
                   currentIndex === 0
@@ -57,7 +57,7 @@ const Testimonial = () => {
               <HiChevronLeft />
             </div>
             <div
-              className="app__flex"
+              className="app__flex app__shadow"
               onClick={() =>
                 handleClick(
                   currentIndex === testimonials.length - 1

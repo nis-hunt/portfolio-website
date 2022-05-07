@@ -25,7 +25,7 @@
 
     &:hover {
       background-color: var(--secondary-color);
-      color: #fff;
+      color: #000;
       box-shadow: 0 0 100px rgba(255, 255, 255, 0.496);
     }
 
@@ -37,7 +37,7 @@
 
   .item-active {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: #000;
   }
 }
 
@@ -58,7 +58,7 @@
     flex-direction: column;
 
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: var(--gray-color);
     color: #000;
 
     overflow-y: scroll;
@@ -113,7 +113,7 @@
 }
 
 .app__work-content {
-  padding-top: 1rem;
+  padding-top: 2rem;
   width: 100%;
   height: fit-content;
   position: relative;
@@ -126,8 +126,11 @@
   }
 
   p {
-    padding: 0rem 1rem;
+    padding: 1rem 1rem;
     flex: 1;
+    color: var(--lightGray-color);
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .app__work-tag {
