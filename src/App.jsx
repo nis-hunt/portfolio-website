@@ -6,9 +6,9 @@ function App() {
   // @dev --input implement redux for state managementtwt
   const allSections = [
     "home",
-    "about",
-    "work",
     "skills",
+    "work",
+    "blogs",
     "testimonial",
     "contact",
   ];
@@ -16,9 +16,9 @@ function App() {
     <div className="app">
       <Navbar allSections={allSections} />
       <Header />
-      <About />
-      <Work />
       <Skills />
+      <Work />
+      <About />
       <Testimonial />
       <Footer />
     </div>

@@ -10,7 +10,7 @@
 
   ::selection {
     // color: red;
-    background: rgba(255, 255, 0, 0.206);
+    background: rgb(255, 255, 0);
     color: rgb(8, 123, 239);
   }
 }
@@ -24,13 +24,14 @@
 }
 
 .app__whitebg {
-  background: radial-gradient(
-      111% 111% at 74.29% -11%,
-      #a90000 0%,
-      #027000 100%
-    ),
+  background: linear-gradient(238.72deg, #ffeeee 0%, #06002e 100%),
+    radial-gradient(111% 111% at 74.29% -11%, #00db3d 0%, #2c008a 100%),
+    radial-gradient(111% 111% at 74.29% -11%, #ff0303 0%, #00718a 100%),
+    radial-gradient(111.5% 111.5% at 83.93% 106%, #cc00ff 0%, #00239f 100%),
+    linear-gradient(127.43deg, #535a00 0%, #ddfbff 100%),
     linear-gradient(127.43deg, #b7d500 0%, #2200aa 100%);
-  background-blend-mode: difference, normal;
+  background-blend-mode: overlay, difference, difference, difference, overlay,
+    normal;
 }
 .app__primarybg {
   background-color: var(--primary-color);
@@ -39,6 +40,7 @@
 .app__container {
   width: 100%;
   min-height: 100vh;
+  position: relative;
 
   display: flex;
   flex-direction: row;
@@ -72,7 +74,7 @@
 
   p {
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--lightGray-color);
   }
 }
 
@@ -156,6 +158,7 @@
       width: 40px;
       height: 40px;
       color: var(--secondary-color);
+      transition: all 0.3s ease;
     }
 
     &:hover {
@@ -217,5 +220,28 @@
 
   .copyright {
     padding: 2rem;
+  }
+}
+
+.app__layerUp {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: inherit;
+  overflow: hidden;
+  img {
+    width: 100%;
+    object-fit: fill;
+  }
+}
+.app__layerDown {
+  z-index: 1;
+  position: absolute;
+  bottom: -10px;
+  width: inherit;
+  overflow: hidden;
+  img {
+    object-fit: fill;
+    width: 100%;
   }
 }

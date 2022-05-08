@@ -72,7 +72,6 @@ const Work = () => {
             <a href={work.projectLink} target="blank" rel="noreferrer">
               <div className="app__work-img app__flex">
                 <motion.div
-                  whileHover={{ scale: [1, 0.9] }}
                   whileInView={{ scale: [0, 1] }}
                   transition={{
                     duration: 0.25,
