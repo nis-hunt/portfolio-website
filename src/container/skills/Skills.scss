@@ -45,7 +45,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgba(213, 213, 213, 0.154);
     img {
       width: 50%;
       height: 50%;
@@ -53,7 +53,7 @@
 
     &:hover {
       transition: all 0.3s ease-in-out;
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 50px #fef4f55a;
     }
 
     @media screen and (min-width: 2000px) {
@@ -80,6 +80,16 @@
 }
 
 .app__skills-exp {
+  // 1. Make the background color transparent
+  background: rgba(157, 157, 157, 0.211);
+  // 2. Apply blur background effect to the background 👇️:
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+
+  box-shadow: 0 0 100px -25px rgba(255, 255, 255, 0.19);
+
+  padding: 2rem;
+  border-radius: 3rem;
   flex: 1;
   display: flex;
   justify-content: flex-start;
@@ -118,8 +128,8 @@
     text-align: left;
   }
   p {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.75rem;
+    font-weight: 400;
     color: var(--gray-color);
     margin-top: 5px;
   }

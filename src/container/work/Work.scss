@@ -14,7 +14,7 @@
   margin-top: 1rem;
 
   .app__work-filter-item {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     border-radius: 0.5rem;
     background-color: var(--white-color);
     color: var(--gray-color);
@@ -57,8 +57,11 @@
     width: 390px;
     flex-direction: column;
 
-    border-radius: 1rem;
+    box-shadow: 0 0 100px -25px rgba(255, 255, 255, 0.19);
+
+    border-radius: 2rem;
     background-color: var(--gray-color);
+
     color: #000;
 
     overflow-y: scroll;

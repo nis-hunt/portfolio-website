@@ -24,17 +24,10 @@
 }
 
 .app__whitebg {
-  background: linear-gradient(238.72deg, #ffeeee 0%, #06002e 100%),
-    radial-gradient(111% 111% at 74.29% -11%, #00db3d 0%, #2c008a 100%),
-    radial-gradient(111% 111% at 74.29% -11%, #ff0303 0%, #00718a 100%),
-    radial-gradient(111.5% 111.5% at 83.93% 106%, #cc00ff 0%, #00239f 100%),
-    linear-gradient(127.43deg, #535a00 0%, #ddfbff 100%),
-    linear-gradient(127.43deg, #b7d500 0%, #2200aa 100%);
-  background-blend-mode: overlay, difference, difference, difference, overlay,
-    normal;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 27%, 1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='hsla(61, 100%, 16%, 1)' fill='none'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='hsla(66, 100%, 13%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
 }
 .app__primarybg {
-  background-color: var(--primary-color);
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 27%, 1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='hsla(61, 100%, 16%, 1)' fill='none'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='hsla(66, 100%, 13%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
 }
 
 .app__container {
@@ -81,7 +74,7 @@
 .app__shadow {
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.471);
   &:hover {
-    box-shadow: 0 0 100px -25px rgba(255, 255, 255, 0.496);
+    box-shadow: 0 0 100px -25px rgba(255, 255, 255, 0.339);
   }
 }
 

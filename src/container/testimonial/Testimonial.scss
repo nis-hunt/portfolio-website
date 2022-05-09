@@ -103,12 +103,10 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--white-color);
 
       svg {
-        width: 30px;
-        height: 30px;
-        color: var(--white-color);
+        color: var(--black-color);
       }
     }
   }

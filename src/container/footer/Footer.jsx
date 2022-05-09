@@ -70,8 +70,7 @@ const Footer = () => {
               value={username}
               onChange={handleChangeInput}
             />
-          </div>
-          <div className="app__flex">
+
             <input
               className="p-text"
               type="email"
